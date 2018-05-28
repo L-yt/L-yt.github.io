@@ -7,17 +7,17 @@
   
   <title>主键、外键的关系 | 时而兴起</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="今天写一篇关于数据库主键和外键的介绍 首先，我们需要了解一下什么是主键、外键。 在关系型数据库中，某一条记录有若干个属性，如果其中某一个属性组能唯一标识一条记录，那么该属性组则可以成为一个主键。 比如   学生表（学号，姓名，性别，班级）   这个学生表中，每个学生的学号是唯一的，不可重复的，而姓名、性别、班级都是可以重复的。 1举个栗子：这个班级有两个人都叫小明，他们可能都是男生，但是他们的学号">
+  <meta name="description" content="今天写一篇关于数据库主键和外键的介绍首先，我们需要了解一下什么是主键、外键。">
 <meta property="og:type" content="article">
 <meta property="og:title" content="主键、外键的关系">
 <meta property="og:url" content="http://yoursite.com/2018/05/28/主键、外键的关系/index.html">
 <meta property="og:site_name" content="时而兴起">
-<meta property="og:description" content="今天写一篇关于数据库主键和外键的介绍 首先，我们需要了解一下什么是主键、外键。 在关系型数据库中，某一条记录有若干个属性，如果其中某一个属性组能唯一标识一条记录，那么该属性组则可以成为一个主键。 比如   学生表（学号，姓名，性别，班级）   这个学生表中，每个学生的学号是唯一的，不可重复的，而姓名、性别、班级都是可以重复的。 1举个栗子：这个班级有两个人都叫小明，他们可能都是男生，但是他们的学号">
+<meta property="og:description" content="今天写一篇关于数据库主键和外键的介绍首先，我们需要了解一下什么是主键、外键。">
 <meta property="og:locale" content="default">
-<meta property="og:updated_time" content="2018-05-28T10:36:08.037Z">
+<meta property="og:updated_time" content="2018-05-28T12:53:37.428Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="主键、外键的关系">
-<meta name="twitter:description" content="今天写一篇关于数据库主键和外键的介绍 首先，我们需要了解一下什么是主键、外键。 在关系型数据库中，某一条记录有若干个属性，如果其中某一个属性组能唯一标识一条记录，那么该属性组则可以成为一个主键。 比如   学生表（学号，姓名，性别，班级）   这个学生表中，每个学生的学号是唯一的，不可重复的，而姓名、性别、班级都是可以重复的。 1举个栗子：这个班级有两个人都叫小明，他们可能都是男生，但是他们的学号">
+<meta name="twitter:description" content="今天写一篇关于数据库主键和外键的介绍首先，我们需要了解一下什么是主键、外键。">
   
     <link rel="alternate" href="/atom.xml" title="时而兴起" type="application/atom+xml">
   
@@ -86,45 +86,68 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        <h2 id="今天写一篇关于数据库主键和外键的介绍"><a href="#今天写一篇关于数据库主键和外键的介绍" class="headerlink" title="今天写一篇关于数据库主键和外键的介绍"></a><strong>今天写一篇关于数据库主键和外键的介绍</strong></h2><hr>
-<p>首先，我们需要了解一下什么是主键、外键。</p>
-<p>在<strong>关系型数据库</strong>中，某一条记录有若干个属性，如果其中某一个<strong>属性组</strong>能<strong>唯一</strong>标识一条记录，那么该<strong>属性组</strong>则可以成为一个主键。</p>
+        <h2 id="今天写一篇关于数据库主键和外键的介绍"><a href="#今天写一篇关于数据库主键和外键的介绍" class="headerlink" title="今天写一篇关于数据库主键和外键的介绍"></a><strong>今天写一篇关于数据库主键和外键的介绍</strong></h2><p>首先，我们需要了解一下什么是主键、外键。<br><a id="more"></a><br>在<strong>关系型数据库</strong>中，某一条记录有若干个属性，如果其中某一个<strong>属性组</strong>能<strong>唯一</strong>标识一条记录，那么该<strong>属性组</strong>则可以成为一个主键。</p>
 <p>比如</p>
-<blockquote>
 <ul>
 <li>学生表（学号，姓名，性别，班级）</li>
 </ul>
-</blockquote>
 <p>这个学生表中，每个学生的学号是<strong>唯一的</strong>，<strong>不可重复的</strong>，而姓名、性别、班级都是可以重复的。</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">举个栗子：这个班级有两个人都叫小明，他们可能都是男生，但是他们的学号不可能是一样的，因为学号是区别学生的身份的重要凭证。</span><br></pre></td></tr></table></figure>
-<blockquote>
+<p><strong>举个栗子：这个班级有两个人都叫小明，他们可能都是男生，但是他们的学号不可能是一样的，因为学号是区别学生的身份的重要凭证。</strong></p>
 <ul>
 <li>课程表（课程编号，课程名字，学分）</li>
 </ul>
-</blockquote>
 <p>同理，在这里课程编号是<strong>唯一</strong>的，所以课程编号就是一个主键</p>
-<blockquote>
 <ul>
 <li>成绩表（学号，课程编号，成绩）</li>
 </ul>
-</blockquote>
 <p>在这个表中，仅凭<strong>单个</strong>属性是无法唯一标识表中的任一条纪录的，需要学号和课程编号的组合才能做到，所以学号和课程编号的<strong>属性组</strong>是一个主键。</p>
-<p>又因为<strong>成绩表中的学号</strong>不是成绩表的主键，但是又对应了<strong>学生表中的学号</strong>，并且<strong>学生表中的学号</strong>是学生表的主键，所以<strong>成绩表中的学号</strong>是学生表的<strong>外键</strong>。<br>ps：emmm这里看起来可能会比较乱，不过自己理理思路相信很快就能搞懂。</p>
+<p>又因为<strong>成绩表中的学号</strong>不是成绩表的主键，但是又对应了<strong>学生表中的学号</strong>，并且<strong>学生表中的学号</strong>是学生表的主键，所以<strong>成绩表中的学号</strong>是学生表的<strong>外键</strong>。</p>
+<p>ps：emmm这里看起来可能会比较乱，不过自己理理思路相信很快就能搞懂。</p>
 <p>同理，成绩表中的课程编号是成绩表的<strong>外键</strong>。</p>
-<p>##最后总结一下##</p>
-<ul>
+<h2 id="最后总结一下"><a href="#最后总结一下" class="headerlink" title="最后总结一下"></a>最后总结一下</h2><ul>
 <li>主键是能确定一条记录的唯一标识。</li>
 </ul>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">比如：学号是唯一能确定学生身份的标识，其他数  据都可能会重复，所以学号是学生表的主键。</span><br></pre></td></tr></table></figure>
+<p><strong>比如：学号是唯一能确定学生身份的标识，其他数据都可能会重复，所以学号是学生表的主键。</strong></p>
 <ul>
 <li>外键的作用是关联其他表，用于表与表之间的联系，保证数据的一致性。</li>
 </ul>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">比如：学号是学生表的主键，而成绩表中有学号这个字段，所以成绩表的学号可以是学生表的外键。</span><br></pre></td></tr></table></figure>
+<p><strong>比如：学号是学生表的主键，而成绩表中有学号这个字段，所以成绩表的学号可以是学生表的外键。</strong></p>
+<p><strong>主键、外键和索引的关系</strong></p>
+<table>
+<thead>
+<tr>
+<th>**</th>
+<th>主键</th>
+<th>外键</th>
+<th>索引</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>定义</td>
+<td>唯一标识一条记录，不能有重复的，不允许为空</td>
+<td>表的外键是另一表的主键,外键可以有重复的,可以是空值</td>
+<td>该字段没有重复值，但可以有一个空值</td>
+</tr>
+<tr>
+<td>作用</td>
+<td>用来保证数据完整性</td>
+<td>用来和其他表建立联系用的</td>
+<td>提高查询排序的速度</td>
+</tr>
+<tr>
+<td>数量</td>
+<td>一个表只能有一个主键</td>
+<td>一个表可以有多个外键</td>
+<td>一个表可以有多个唯一索引</td>
+</tr>
+</tbody>
+</table>
 
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2018/05/28/主键、外键的关系/" data-id="cjhq4cv0b000198g3v4fdbi3c" class="article-share-link">Share</a>
+      <a data-url="http://yoursite.com/2018/05/28/主键、外键的关系/" data-id="cjhq99dtz0003lgg3mizndtum" class="article-share-link">Share</a>
       
     <a href="http://yoursite.com/2018/05/28/主键、外键的关系/#ds-thread" class="ds-thread-count article-comment-link" data-thread-key="2018/05/28/主键、外键的关系/">评论</a>
 	  

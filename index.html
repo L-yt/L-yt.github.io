@@ -84,45 +84,16 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        <h2 id="今天写一篇关于数据库主键和外键的介绍"><a href="#今天写一篇关于数据库主键和外键的介绍" class="headerlink" title="今天写一篇关于数据库主键和外键的介绍"></a><strong>今天写一篇关于数据库主键和外键的介绍</strong></h2><hr>
-<p>首先，我们需要了解一下什么是主键、外键。</p>
-<p>在<strong>关系型数据库</strong>中，某一条记录有若干个属性，如果其中某一个<strong>属性组</strong>能<strong>唯一</strong>标识一条记录，那么该<strong>属性组</strong>则可以成为一个主键。</p>
-<p>比如</p>
-<blockquote>
-<ul>
-<li>学生表（学号，姓名，性别，班级）</li>
-</ul>
-</blockquote>
-<p>这个学生表中，每个学生的学号是<strong>唯一的</strong>，<strong>不可重复的</strong>，而姓名、性别、班级都是可以重复的。</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">举个栗子：这个班级有两个人都叫小明，他们可能都是男生，但是他们的学号不可能是一样的，因为学号是区别学生的身份的重要凭证。</span><br></pre></td></tr></table></figure>
-<blockquote>
-<ul>
-<li>课程表（课程编号，课程名字，学分）</li>
-</ul>
-</blockquote>
-<p>同理，在这里课程编号是<strong>唯一</strong>的，所以课程编号就是一个主键</p>
-<blockquote>
-<ul>
-<li>成绩表（学号，课程编号，成绩）</li>
-</ul>
-</blockquote>
-<p>在这个表中，仅凭<strong>单个</strong>属性是无法唯一标识表中的任一条纪录的，需要学号和课程编号的组合才能做到，所以学号和课程编号的<strong>属性组</strong>是一个主键。</p>
-<p>又因为<strong>成绩表中的学号</strong>不是成绩表的主键，但是又对应了<strong>学生表中的学号</strong>，并且<strong>学生表中的学号</strong>是学生表的主键，所以<strong>成绩表中的学号</strong>是学生表的<strong>外键</strong>。<br>ps：emmm这里看起来可能会比较乱，不过自己理理思路相信很快就能搞懂。</p>
-<p>同理，成绩表中的课程编号是成绩表的<strong>外键</strong>。</p>
-<p>##最后总结一下##</p>
-<ul>
-<li>主键是能确定一条记录的唯一标识。</li>
-</ul>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">比如：学号是唯一能确定学生身份的标识，其他数  据都可能会重复，所以学号是学生表的主键。</span><br></pre></td></tr></table></figure>
-<ul>
-<li>外键的作用是关联其他表，用于表与表之间的联系，保证数据的一致性。</li>
-</ul>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">比如：学号是学生表的主键，而成绩表中有学号这个字段，所以成绩表的学号可以是学生表的外键。</span><br></pre></td></tr></table></figure>
-
+        <h2 id="今天写一篇关于数据库主键和外键的介绍"><a href="#今天写一篇关于数据库主键和外键的介绍" class="headerlink" title="今天写一篇关于数据库主键和外键的介绍"></a><strong>今天写一篇关于数据库主键和外键的介绍</strong></h2><p>首先，我们需要了解一下什么是主键、外键。<br>
+        
+          <p class="article-more-link">
+            <a href="/2018/05/28/主键、外键的关系/#more">Read More</a>
+          </p>
+        
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2018/05/28/主键、外键的关系/" data-id="cjhq4cv0b000198g3v4fdbi3c" class="article-share-link">Share</a>
+      <a data-url="http://yoursite.com/2018/05/28/主键、外键的关系/" data-id="cjhq99dtz0003lgg3mizndtum" class="article-share-link">Share</a>
       
     <a href="http://yoursite.com/2018/05/28/主键、外键的关系/#ds-thread" class="ds-thread-count article-comment-link" data-thread-key="2018/05/28/主键、外键的关系/">评论</a>
 	  
@@ -165,7 +136,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2018/05/01/Java-三大特性/" data-id="cjhq4cv0u000298g3bxn1f9wu" class="article-share-link">Share</a>
+      <a data-url="http://yoursite.com/2018/05/01/Java-三大特性/" data-id="cjhq99dtn0000lgg3tqr078l5" class="article-share-link">Share</a>
       
     <a href="http://yoursite.com/2018/05/01/Java-三大特性/#ds-thread" class="ds-thread-count article-comment-link" data-thread-key="2018/05/01/Java-三大特性/">评论</a>
 	  
@@ -208,7 +179,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2018/04/26/Java-简介/" data-id="cjhq4cv1h000598g309z2qmh0" class="article-share-link">Share</a>
+      <a data-url="http://yoursite.com/2018/04/26/Java-简介/" data-id="cjhq99dtw0002lgg34joh8yw5" class="article-share-link">Share</a>
       
     <a href="http://yoursite.com/2018/04/26/Java-简介/#ds-thread" class="ds-thread-count article-comment-link" data-thread-key="2018/04/26/Java-简介/">评论</a>
 	  
@@ -251,7 +222,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2018/04/22/面向对象与面向过程的区别/" data-id="cjhq4cv0x000398g3nslpc40t" class="article-share-link">Share</a>
+      <a data-url="http://yoursite.com/2018/04/22/面向对象与面向过程的区别/" data-id="cjhq99du30005lgg3euinzb4w" class="article-share-link">Share</a>
       
     <a href="http://yoursite.com/2018/04/22/面向对象与面向过程的区别/#ds-thread" class="ds-thread-count article-comment-link" data-thread-key="2018/04/22/面向对象与面向过程的区别/">评论</a>
 	  
@@ -295,47 +266,9 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2018/04/21/英语有点烦/" data-id="cjhq4cv10000498g3mlvyssx7" class="article-share-link">Share</a>
+      <a data-url="http://yoursite.com/2018/04/21/英语有点烦/" data-id="cjhq99du10004lgg334vtm08z" class="article-share-link">Share</a>
       
     <a href="http://yoursite.com/2018/04/21/英语有点烦/#ds-thread" class="ds-thread-count article-comment-link" data-thread-key="2018/04/21/英语有点烦/">评论</a>
-	  
-      
-    </footer>
-  </div>
-  
-</article>
-
-
-  
-    <article id="post-为了好看" class="article article-type-post" itemscope itemprop="blogPost">
-  <div class="article-meta">
-    <a href="/2018/04/21/为了好看/" class="article-date">
-  <time datetime="2018-04-21T13:24:11.000Z" itemprop="datePublished">2018-04-21</time>
-</a>
-    
-  </div>
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2018/04/21/为了好看/">为了好看</a>
-    </h1>
-  
-
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        
-      
-    </div>
-    <footer class="article-footer">
-      <a data-url="http://yoursite.com/2018/04/21/为了好看/" data-id="cjhq4cuvt000098g32i3ankq4" class="article-share-link">Share</a>
-      
-    <a href="http://yoursite.com/2018/04/21/为了好看/#ds-thread" class="ds-thread-count article-comment-link" data-thread-key="2018/04/21/为了好看/">评论</a>
 	  
       
     </footer>
